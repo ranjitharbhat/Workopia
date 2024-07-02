@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+https://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/tx
+https://www.springframework.org/schema/tx/spring-tx.xsd">
+
+<bean name="address" class="com.infy.reference.ConstructorArg.Address">
+	<constructor-arg name="dno" value="1234"/>
+	<constructor-arg name="street" value="anagar"/>
+	<constructor-arg name="city" value="karkala"/>
+</bean>
+
+<bean name="student" class="com.infy.reference.ConstructorArg.Student" 
+>
+	<constructor-arg name="id" value="1111"/>
+	<constructor-arg name="name" value="raj"/>
+	<constructor-arg name="address" ref="address"/>
+	<constructor-arg name="course" value="cce"/>
+</bean>
+
+</beans>

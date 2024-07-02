@@ -1,0 +1,16 @@
+{
+  "name": "ranjitharbhat/workopia",
+  "description": "Job listing application",
+  "authors": [
+    {
+      "name": "Ranjitha R Bhat",
+      "email": "4nm21cm042@nmamit.in"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "Framework/",
+      "App\\": "App/"
+    }
+  }
+}
